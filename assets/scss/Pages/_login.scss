@@ -1,0 +1,43 @@
+.form__input{
+    @extend .width-100;
+    @extend .padding-forminput;
+}
+.wrapper{
+  
+    .wrapper__container{
+        .bodywrap{
+            .login-container{
+                .school-logo{
+                    @extend .text-center;  
+                    img{
+                        @extend .width-25;
+                                      
+                    }
+                   
+                }
+                .school-heading{
+                   h1{
+                      
+                       @extend .text-center;
+                   }
+                }
+                .login-form{
+                    @extend .pt30;
+                    
+                    
+                    form{
+                       
+                        .form__password{
+                            @extend .pt20;
+                        }
+                  
+
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+

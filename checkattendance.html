@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Attendance</title>
+    <link rel="stylesheet" href="assets\vendors\bootstrap\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="assets\css\global.css">
+</head>
+
+<body>
+    <div class="wrapper-dashboard">
+        <div class="container Dashboard-container">
+
+            <div class="nav-bar">
+                <div class="nav-bar__container">
+                    <div class="row container__navbar-row">
+                        <div class="col-md-3 image-container">
+                            <a href="index.html">
+                                <img src="./assets/images/logo1.png" class="width-60">
+                            </a>
+
+                        </div>
+                        <div class="col-md-9 menu-container ">
+                            <div class="row menu-container__menu-row">
+                                <div class="col-md-9 menu-row__menu-items">
+                                    <div class="row">
+                                        <div class="col-md-3 transform50">
+                                            <a href="index.html" class="active">
+                                                Dashboard
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 transform50">
+                                            <a href="reports.html">
+                                                Attendance Report
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 transform40">
+                                            <a href="checkattendance.html">
+                                                <div class="card card-button p5">
+                                                    <div class="row menu-items__card">
+                                                        <div class="col-md-2">
+                                                            <i class="fas fa-user-check "></i>
+                                                        </div>
+                                                        <div class="col-md-10 text-center">
+                                                            <span>Take Attendance</span>
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-md-3 menu-row__menu-notification">
+                                    <div class="row menu-notification__container">
+                                        <div class="col-md-6  text-center container__bell">
+                                            <a href="#">
+                                                <i class="fas fa-bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 text-end container__signout">
+                                            <!-- <a href="#">
+                                              
+                                                <img src="./assets/images/logout2.png" class="width-40">
+                                            </a> -->
+                                            <a href="login.html">
+                                                <span class="bold text-color">Sameer</span> <i
+                                                    class="fas fa-caret-down"></i>
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="check-heading">
+                <div class="container check-heading__container">
+                    <div class="row container__title-row pt50">
+                        <div class="col-md-12 text-center">
+                            <div class="title-row__title">
+                                <h5>Take Attendance</h5>
+                            </div>
+                            <div class="title-row__attendance-date">
+                                <h10><b>Attendance date:</b></h10> <span>09-11-2020</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="row container__search pt30">
+                        <div class="col-md-12 text-end ">
+                            <form>
+                                <input type="text" class="search-input" placeholder="Search.." name="search">
+                                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                              </form>
+                        
+                        </div>
+                    </div> -->
+                    <!-- <div class="row container__dropdown-row pt30">
+                       
+                            
+                            <div class="col-md-3 dropdown-grade">
+
+                                <select id="grade" name="grade" class="width-100 dropdown-pad">
+                                    <option value="Grade 1">Grade 1</option>
+                                    <option value="Grade 2">Grade 2</option>
+                                    <option value="Grade 3">Grade 3</option>
+                                    <option value="Grade 4">Grade 4</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-3 dropdown-calander">
+                                <input type="date" id="date" name="date" class="width-100 dropdown-pad">
+                            </div>
+
+                            <div class="col-md-2">
+                                <input type="button" class="button-filter " value="Filter">
+                            </div>
+                        
+                    </div> -->
+
+                    <!-- <div class="table-summary pt30">
+                        <div class="row table-summary__card">
+                            <div class="col-md-3">
+                                <div class="title-row__attendance-card card bg-present">
+                                    <div class="attendance-date__number">
+                                        25
+                                    </div>
+                                    <div class="attendance-date__title">
+                                        Total Present
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="title-row__attendance-card card bg-absent">
+                                    <div class="attendance-date__number">
+                                        5
+                                    </div>
+                                    <div class="attendance-date__title">
+                                        Total Absent
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div> -->
+                    <div class="row container__checkbox-present d-flex justify-content-end floatr pt20">
+                        <div class="col-md-12 ">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="present" name="present" value="present">
+                                    <label for="present"> Present all</label><br>
+                                </li>
+                                
+                            </ul>
+                         
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="check-table">
+                <table class="table">
+                    <thead>
+                      <tr>
+                      
+                        <th scope="col">S.N</th>
+                        <th scope="col">Student Name</th>
+                        <th scope="col">Roll No</th>
+                        <th scope="col">Attendance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        
+                        <th scope="row">1</th>
+                        <td>Mark Thapa</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <th scope="row">2</th>
+                        <td>Jacob Lama</td>
+                        <td>Cs170812</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <th scope="row">3</th>
+                        <td>Larry shrestha</td>
+                        <td>Cs170813</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <th scope="row">4</th>
+                        <td>Mark Dangol</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <th scope="row">5</th>
+                        <td>Mark kaji</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <th scope="row">6</th>
+                        <td>Bijayata shrestha</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <th scope="row">7</th>
+                        <td>Sohail shah</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <th scope="row">8</th>
+                        <td>Shishir Thapa</td>
+                        <td>Cs170811</td>
+                        <td>
+                            <ul class="d-flex">
+                                <li>
+                                    <div class="card card-presenttag">
+                                        <span>P</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-absenttag">
+                                        <span>A</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-latetag">
+                                        <span>L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                     
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+            <div class="table-savebutton">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                       
+                            <li>
+                                <input type="button" class="button-save " value="Save">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+    </div>
+
+</body>
+
+</html>

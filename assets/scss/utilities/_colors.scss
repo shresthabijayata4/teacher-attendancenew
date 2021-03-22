@@ -1,0 +1,100 @@
+$theme-color: hsl(263, 49%, 42%);
+// $text-color: #333;
+$text-color: #171024;
+$button-border: #C7B5E3;
+$theme-faded: hsl(262, 43%, 95%);
+
+$theme-subfaded: #7246B9;
+$green:#bdfac3;
+$yellow: #FCF8AB ;
+// $red: #FCAAAA ;
+$red: #fdbaba;
+$placeholder: #6C6969;
+
+$calander: #56BC32;
+
+$white: white;
+$border-color: rgba(0,0,0,.125);
+
+$dark-green: #152f2e;
+
+.theme-faded{
+    background-color: $theme-faded;
+}
+
+.dark-green{
+    color: $dark-green;
+}
+
+body{
+    color: $text-color;
+
+    background-color: #fcfbfe;
+}
+
+.bg-subfaded{
+    background-color: $button-border;
+}
+.theme-subfaded{
+    color: $theme-subfaded;
+}
+
+.bg-absent{
+    background-color: $red;
+}
+
+.bg-present{
+    background-color: $green;
+}
+.bg-late{
+    background-color: $yellow;
+}
+
+.primary-color{
+    color: $theme-color ;
+}
+
+.text-color{
+    color: $text-color;
+}
+
+.green{
+    color: $green;
+}
+
+.yellow{
+    color: $green;
+}
+
+.red{
+    color: $red;
+}
+
+.black{
+    color: $text-color;
+}
+
+.placeholder-text{
+    color: $placeholder;
+}
+
+.calander-color{
+    color: $calander;
+}
+
+.bg-theme{
+    background-color: $theme-color;
+}
+
+.white{
+    color: $white;
+}
+
+.border-color{
+    border-color: $border-color;
+}
+
+.cardbutton-border{
+    border-color: $button-border;
+   
+}

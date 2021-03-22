@@ -1,0 +1,75 @@
+$pform: 8px 8px;
+$pt30: 30px;
+$pt20: 20px;
+$pt50: 50px;
+$p20: 20px;
+$pt10: 10px;
+$pt90: 90px;
+$p5: 5px;
+
+$p10: 10px;
+$ptb10: 10px 0px;
+
+
+
+$button-pad: 8px 30px;
+
+$buttonfilter-pad: 4px 20px;
+$buttoncheck-pad: 8px 15px;
+
+.p6{
+    padding: 6px;
+}
+
+.ptb10{
+    padding: $ptb10;
+}
+
+.padding-forminput{
+    padding: $pform;
+}
+
+.pt30{
+    padding-top: $pt30;
+}
+
+.pt20{
+    padding-top: $pt20;
+}
+.pt10{
+    padding-top: $pt10;
+}
+.pt90{
+    padding-top: $pt90;
+}
+
+.pt50{
+    padding-top: $pt50;
+}
+
+.p20{
+    padding: $p20;
+}
+
+.p10{
+    padding: $p10;
+}
+
+.p5{
+    padding: $p5;
+}
+
+
+
+.button-pad{
+    padding: $button-pad;
+}
+
+.buttonfilter-pad{
+    padding: $buttonfilter-pad;
+}
+
+.button-checkpad{
+    padding: $buttoncheck-pad;
+}
+

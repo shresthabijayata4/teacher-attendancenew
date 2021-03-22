@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets\vendors\bootstrap\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="assets\css\global.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper-dashboard">
+        <div class="container Dashboard-container">
+
+
+            <!-- =====================================nav-bar start============================================= -->
+            <div class="nav-bar">
+                <div class="nav-bar__container">
+                    <div class="row container__navbar-row">
+                        <div class="col-md-3 image-container">
+                            <a href="index.html">
+                                <img src="./assets/images/logo1.png" class="width-60">
+                            </a>
+
+                        </div>
+                        <div class="col-md-9 menu-container ">
+                            <div class="row menu-container__menu-row">
+                                <div class="col-md-9 menu-row__menu-items">
+                                    <div class="row">
+                                        <div class="col-md-3 transform50">
+                                            <a href="index.html" class="active">
+                                                Dashboard
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 transform50">
+                                            <a href="class.html">
+                                                Attendance Report
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 transform40">
+                                            <a href="attendance_class.html">
+                                                <div class="card card-button p5">
+                                                    <div class="row menu-items__card">
+                                                        <div class="col-md-2">
+                                                            <i class="fas fa-user-check "></i>
+                                                        </div>
+                                                        <div class="col-md-10 text-center">
+                                                            <span>Take Attendance</span>
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-md-3 menu-row__menu-notification">
+                                    <div class="row menu-notification__container">
+                                        <div class="col-md-6  text-center container__bell">
+                                            <a href="#">
+                                                <i class="fas fa-bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 text-end container__signout">
+                                            <!-- <a href="#">
+                                              
+                                                <img src="./assets/images/logout2.png" class="width-40">
+                                            </a> -->
+                                            <a href="login.html">
+                                                <span class="bold text-color">Sameer</span> <i
+                                                    class="fas fa-caret-down"></i>
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================================end navbar======================================== -->
+
+            <!-- ==================================================Cards start=================================================== -->
+            <div class="card-attendance">
+                <div class="container">
+                    <div class="row greetings-container">
+                        <div class="col text-center bold font-35 font-work pt30">
+                            Good Morning, Sameer
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col text-center pt10">
+                            Here's an overview of <b class="primary-color">Today's Attendance</b>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-9">
+
+
+
+
+                            <div class="report-summary">
+
+                                <div class="container report-summary__container bw1">
+                                    <div class="row container__card-row pt50">
+                                        <div class="col-md-4 card-row__present">
+                                            <div class="card card-attendance present__card p20">
+                                                <div class="row">
+                                                    <div class="col present-icon text-end">
+                                                     
+                                                        <i class="fas fa-user-friends"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content pt20">
+                                                        <div class="card__amount">202</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content pt5">
+
+                                                        <div class="card__totaltitle">Total Present</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 card-row__absent">
+                                            <div class="card card-attendance absent__card p20">
+                                                <div class="row ">
+                                                    <div class="col absent-icon text-end">
+                                                        <i class="fas fa-user-times"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content pt20 ">
+                                                        <div class="card__amount">20</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content pt5">
+
+                                                        <div class="card__totaltitle">Total Absent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 card-row__late">
+                                            <div class="card card-attendance late__card p20">
+                                                <div class="row">
+                                                    <div class="col late-icon text-end">
+                                                        <img src="./assets/images/late_comers.png" class="width-17">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content pt20 ">
+                                                        <div class="card__amount">30</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col present-content  pt5">
+
+                                                        <div class="card__totaltitle">Total Late</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="attendance-piechart">
+                                <div class="container card ptb10">
+                                    <div class="row">
+                                        <canvas id="myChart" style="width: 100px; height: 100px;"></canvas>
+                                        <script>
+                                            var ctx = document.getElementById('myChart').getContext('2d');
+                                            var myDoughnutChart = new Chart(ctx, {
+                                                type: 'pie',
+                                                data: {
+                                                    labels: ['Present', 'Absent', 'Late'],
+                                                    datasets: [{
+                                                        label: '# of Votes',
+                                                        data: [95, 20, 30],
+                                                        backgroundColor: [
+                                                            'rgba(205, 254, 210)',
+                                                            'rgba(252, 170, 170)',
+                                                            'rgba(252, 248, 171)'
+
+                                                        ],
+                                                        borderColor: [
+                                                        'rgba(205, 254, 210, 1)',
+                                                            'rgba(252, 170, 170, 1)',
+                                                            'rgba(252, 248, 171, 1)'
+                                                        ],
+                                                     
+                                                        borderWidth: 1
+                                                    }]
+                                                },
+                                                options: {
+                                                    // scales: {
+                                                    //     yAxes: [{
+                                                    //         ticks: {
+                                                    //             beginAtZero: true
+                                                    //         }
+                                                    //     }]
+                                                    // }
+                                                }
+                                            });
+//
+// var myDoughnutChart = new Chart(ctx, {
+//     type: 'doughnut',
+//     data: data,
+//     options: options
+// });
+// data = {
+//     datasets: [{
+//         data: [10, 20, 30]
+//     }],
+
+
+//     labels: [
+//         'Red',
+//         'Yellow',
+//         'Blue'
+//     ]
+// };
+
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ======================================================cards end ==================================================== -->
+            <!-- ===================================================start attendance summary============================================== -->
+            <div class="Attendance-summary">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center pt90">
+                            <h1 class="font-work">Attendance Summary</h1>
+                        </div>
+
+                    </div>
+
+                    <div class="row pt30">
+                        <div class="col-md-6">
+                            <div class="row">
+
+                                <div class="col-md-4 dropdown-grade ">
+
+                                    <select id="grade" name="grade" class=" dropdown-grade__input">
+                                        <option value="Grade 1">Grade 1</option>
+                                        <option value="Grade 2">Grade 2</option>
+                                        <option value="Grade 3">Grade 3</option>
+                                        <option value="Grade 4">Grade 4</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-4 dropdown-calander">
+                                    <input type="date" id="date" name="date" class="dropdown-calander__input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <!-- <img src=".\assets\images\bargraph.PNG" class="width-100 pt30"> -->
+                                    <canvas id="mybargraph" width="400" height="400"></canvas>
+                                    <script>
+                                        var ctx = document.getElementById('mybargraph');
+                                        var myChart = new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Present', 'Absent', 'Late'],
+                                                datasets: [{
+                                                    // label: 'none',
+                                                    data: [12, 19, 3],
+                                                    backgroundColor: [
+                                                        'rgba(255, 99, 132, 0.2)',
+                                                        'rgba(54, 162, 235, 0.2)',
+                                                        'rgba(255, 206, 86, 0.2)',
+                                                       
+                                                    ],
+                                                    borderColor: [
+                                                        'rgba(255, 99, 132, 1)',
+                                                        'rgba(54, 162, 235, 1)',
+                                                        'rgba(255, 206, 86, 1)',
+                                                       
+                                                    ],
+                                                    borderWidth: 1
+                                                }]
+                                            },
+                                            options: {
+                                                scales: {
+                                                    yAxes: [{
+                                                        ticks: {
+                                                            beginAtZero: true
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6 text-center">
+                                    <div class=" d-flex" style="gap: 10px;">
+                                        <div class=" card card-daily bg-theme white">
+                                            <span class="daily-span">Daily</span>
+                                        </div>
+                                        <div class="card card-daily">
+                                            <span class="daily-span">Weekly</span>
+                                        </div>
+                                        <div class="card card-daily">
+                                            <span class="daily-span">Monthly</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 dropdown-grade">
+
+                                    <select id="grade" name="grade"
+                                        class="dropdown-grade__input width-100 dropdown-pad">
+                                        <option value="Grade 1">Grade 1</option>
+                                        <option value="Grade 2">Grade 2</option>
+                                        <option value="Grade 3">Grade 3</option>
+                                        <option value="Grade 4">Grade 4</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <!-- <img src=".\assets\images\line-chart1.PNG" class="width-100 pt30"> -->
+                                    <canvas id="mylineChart" width="400" height="400"></canvas>
+                                    <script>
+                                        var ctx = document.getElementById('mylineChart');
+                                        var myChart = new Chart(ctx, {
+                                            type: 'line',
+                                            data: {
+                                                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                                datasets: [{
+                                                    label: '# of Votes',
+                                                    data: [{
+                                                        x: 10,
+                                                        y: 20
+                                                    }, {
+                                                        x: 15,
+                                                        y: 10
+                                                    }],
+                                                    backgroundColor: [
+                                                        'rgba(255, 99, 132, 0.2)',
+                                                        'rgba(54, 162, 235, 0.2)',
+                                                        'rgba(255, 206, 86, 0.2)',
+                                                        'rgba(75, 192, 192, 0.2)',
+                                                        'rgba(153, 102, 255, 0.2)',
+                                                        'rgba(255, 159, 64, 0.2)'
+                                                    ],
+                                                    borderColor: [
+                                                        'rgba(255, 99, 132, 1)',
+                                                        'rgba(54, 162, 235, 1)',
+                                                        'rgba(255, 206, 86, 1)',
+                                                        'rgba(75, 192, 192, 1)',
+                                                        'rgba(153, 102, 255, 1)',
+                                                        'rgba(255, 159, 64, 1)'
+                                                    ],
+                                                    borderWidth: 1
+                                                }]
+                                            },
+                                            options: {
+                                                scales: {
+                                                    yAxes: [{
+                                                        ticks: {
+                                                            stacked: true
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- ===================================================end attendance summary============================================== -->
+
+
+        </div>
+    </div>
+</body>
+
+</html>

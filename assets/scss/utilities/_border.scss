@@ -1,0 +1,24 @@
+$br5: 5px;
+$bw1: 1px solid black;
+$bw2: 2px;
+$br5: 5px;
+$br10: 10px;
+
+.br5{
+    border-radius: 5px;
+}
+
+.bw1{
+    border-width: 1px;
+}
+
+.bw2{
+    border-width: $bw2;
+}
+
+.br10{
+    border-radius: $br10;
+}
+
+
+

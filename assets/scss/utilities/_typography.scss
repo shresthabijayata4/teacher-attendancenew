@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$h1: 40px;
+$p: 16px;
+
+$font-s: 10px;
+
+$font-12: 12px;
+$font-15: 15px;
+
+$font-20: 20px;
+
+$h40: 40px;
+
+.font-35{
+    font-size: 35px;
+}
+
+.font-20{
+    font-size: $font-20;
+}
+
+.font-work{
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+.font-12{
+    font-size: $font-12;
+}
+.font-15{
+    font-size: $font-15;
+}
+
+
+.font-10{
+    font-size: 10px;
+}
+
+h1{
+    font-size: $h1;
+    @extend .text-color;
+    // color: #333;
+    font-weight: 500;
+
+    @extend .font-work;
+    
+
+
+}
+
+h5{
+    font-size: $h40;
+    @extend .text-color;
+    // color: #333;
+    font-weight: 500;
+
+    @extend .font-work;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: end;
+}
+
+
+.bold{
+    font-weight: bold;
+   
+}
+
+.white-font{
+    color: #fff;
+    // @extend .bold;
+}
+p{
+    font-size: $p;
+}
+
+span{
+    font-size: 15px;
+}
+
+.daily-span{
+    font-size: 13px;
+}

@@ -1,0 +1,80 @@
+.card-attendance{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.card-daily{
+    width: 25%;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-presenttag{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    @extend .bg-present;
+ 
+}
+.card-absenttag{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    @extend .bg-absent;
+
+}
+.card-latetag{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    @extend .bg-late;
+   
+}
+
+.card-presentreport{
+    width: 40%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    @extend .bg-present;
+}
+.card-absentreport{
+    width: 40%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    @extend .bg-absent;
+}
+
+.menu-card{
+    
+    // @extend .bg-theme;   
+    @extend .white;
+    border-color: $theme-color ;
+}
+
+.card-button{
+    @extend .cardbutton-border;
+    color: $theme-color;
+    @extend .bw2;
+    @extend .br10;
+    // @extend .p5;
+    
+
+
+}
+
+.class-card{
+    padding: 10px;
+    @extend .theme-faded;
+    @extend .black; 
+ 
+}
+
+
+

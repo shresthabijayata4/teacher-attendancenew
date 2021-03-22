@@ -1,0 +1,60 @@
+.button{
+    
+    @extend .white-font;
+    @extend .button-pad;
+    @extend .bg-theme;
+    // @extend .bw1;
+    @extend .br5;
+    border: none;
+}
+
+.daily{
+    @extend .bw1;
+    @extend .white-font;
+    @extend .button-pad;
+    @extend .bg-theme;
+    // @extend .bw1;
+    @extend .br5;
+    
+}
+
+.search-button{
+    float: right;
+    padding: 6px 10px;
+
+    margin-right: 16px;
+    background: $theme-color;
+    font-size: 17px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-filter{
+      
+    @extend .white-font;
+    @extend .buttonfilter-pad;
+    @extend .bg-theme;
+    // @extend .bw1;
+    @extend .br5;
+    border: none;
+}
+.button-save{
+    @extend .white-font;
+    @extend .button-pad;
+    @extend .bg-theme;
+    // @extend .bw1;
+    @extend .br5;
+    border: none;
+}
+
+.button-checkattendance{
+    
+    @extend .white-font;
+
+    @extend .bg-theme;
+    // @extend .bw1;
+    @extend .br5;
+    border: none;
+    @extend .button-checkpad;
+}
