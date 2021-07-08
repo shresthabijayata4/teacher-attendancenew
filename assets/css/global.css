@@ -211,6 +211,10 @@ span {
   font-size: 13px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .width-10 {
   width: 10%;
 }
